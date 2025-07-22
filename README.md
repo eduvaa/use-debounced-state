@@ -7,7 +7,9 @@ A small React hook to debounce state updates.
 ```bash
 npm install use-debounced-state
 
+```
 or
-
+```bash
 yarn add use-debounced-state
 
+```
