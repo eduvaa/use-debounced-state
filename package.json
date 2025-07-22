@@ -1,0 +1,45 @@
+{
+  "name": "use-debounced-state",
+  "version": "1.0.0",
+  "description": "A lightweight React hook to debounce state updates.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format esm,cjs --out-dir dist",
+    "dev": "tsup src/index.ts --dts --watch --out-dir dist",
+    "test": "vitest",
+    "lint": "eslint . --ext .ts,.tsx",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "react",
+    "hook",
+    "debounce",
+    "state",
+    "typescript"
+  ],
+  "author": "@eduvaa",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "eslint": "^8.0.0",
+    "react": "^18.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/react-hooks": "^8.0.0"
+  }
+}
